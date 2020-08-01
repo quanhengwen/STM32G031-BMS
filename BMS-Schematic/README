@@ -1,1 +1,16 @@
 
+Battery management system controlled by STM32G031K632 bit 
+microcontroller, the system has three separated units, 
+power supply, analog digital conversion peripheral
+and communication unit. 
+
+Power supply is connected directly to batteries meaning 
+that we do not need additional external power source.
+Power supply main part is Texas Instruments integrated 
+circuit TPS6107x which stands as a buck/boost converter 
+generating stable 700mA and 3.3V at the output. All 4.7uF 
+capacitors connceted to TPS6107x chip are used to give the 
+maximum power at the output. Two 4.7uF capacitors instead 
+of one 10uF capacitor are better solution due to less 
+noise value generation. 
+ 
