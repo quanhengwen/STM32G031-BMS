@@ -6,8 +6,8 @@ Battery management system controlled by STM32G031K6 32 bit microcontroller, the 
 and communication unit. 
 
 Power supply is connected directly to batteries meaning that we do not need additional external power source. Power supply main part is Texas Instruments integrated 
-circuit TPS6107x which stands as a buck/boost converter generating stable 600mA and 3.3V at the output. All 4.7uF capacitors connceted to TPS6107x chip are used to give the 
-maximum power at the output. Two 4.7uF X7R capacitors instead of one 10uF capacitor are better solution due to less value noise generation. The output voltage of the TPS6107x dc/dc
+circuit TPS6107x which stands as a buck/boost converter generating stable 600 mA and 3.3 V at the output. All 4.7 uF capacitors connceted to TPS6107x chip are used to give the 
+maximum power at the output. Two 4.7 uF X7R capacitors instead of one 10uF capacitor are better solution due to less value noise generation. The output voltage of the TPS6107x dc/dc
 converter can be adjusted with an external resistor divider. The typical value of the voltage at the FB pin is 500 mV. The maximum recommended value for the output voltage is 5.5 V.
 The current through the resistive divider should be about 100 times greater than the current into the FB pin. The typical current into the FB pin is 0.01 µA, and the voltage across R2
 is typically 500 mV. Based on those two values, the recommended value for R2 should be lower than 500 kΩ, in order to set the divider current at 1 µA or higher. Because of internal
@@ -25,5 +25,5 @@ signal making it better for microcontroller to take measurements with 4 extra bi
 Devices are communicating in series, sharing measured values between each other. Main CPU is collecting voltage and temperature values from every unit and posting it to 
 the PLC. System testing unit is using both half duplex and full duplex communication method. Half duplex method allows the system to communicate with another one but not 
 in the same time whereas full duplex is making that possible. Half and full duplex communication main elements are Texas Instruments SN65HVD10 and SN65HVD73 transreceivers 
-circuits. ICs datasheets recommend 10kOhms pull up resistors for receiver input line and 10kOhms pull down resistor for transmitter line. All outputs must be protected 
-from electrostatic discharge. ESD protection is made using zener diodes with Vz = 5V disallowing signals to have values greater than 5V.
+circuits. ICs datasheets recommend 10 kOhms pull up resistors for receiver input line and 10 kOhms pull down resistor for transmitter line. All outputs must be protected 
+from electrostatic discharge. ESD protection is made using 10 Ohms resistors and zener diodes with Vz = 5 V disallowing signals to have values greater than 5 V.
