@@ -1,1 +1,18 @@
+/--------------------------ADC peripheral explanation--------------------------------------
+//PA0 and PA1 are analog input pins connected to measure battery voltage
+//We assume that at PA0 pin (ADC_VOLT point) will be 16 bit battery voltage value
+//at PA1 (ADC_VOLT_IN) will be 12 bit battery voltage value
+//PA4 pin (ADC_TEMP1 point) is connected to voltage divider made by 10k resistor and thermistor in series
+//PA5 pin (ADC_TEMP2 point) is connected aslo to simmilar voltage divider
+//F_CPU is 16 MHz and we need to divide that value to cca 125 kHz to form ADCCLK
+//for this purpose, we will use ADCx_SMPRx register (SMPx [2:0]) that holds the value how many cycles will th system sample
+//any value and ADCx_CCR register (ADCPRE[17:16]) SMPx = 001 (15 cycles), ADCPRE = 11 ( PCK2 / 8) 
+//ADCCLK -> 16 MHz / (15*8) = 133.3 kHz 
+//We will allign data to the right so ALIGH bit in ADCx_CR2 will be cleared to 0, VREF is 2.56 V internally
+
+//--------------------------System Nofitications----------------------------------------------
+//type 0 for false ondition and 1 for true condition
+
+//--------------------------TIM1 peripheral explanation---------------------------------------
+//TIM1 is used to generate clock signal with frquency about 8 Hz, timer mode will be clear at compare match 
 
