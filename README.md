@@ -1,9 +1,9 @@
 #stm32g031k6-BMS#
 
 stm32 microcontroller based battery management system
-
+-----------------------------------------------------
 Circuit explanation
-
+------------------
 Battery management system controlled by STM32G031K6 32 bit microcontroller, the system has three separated units, power supply, analog digital conversion peripheral 
 and communication unit. 
 
