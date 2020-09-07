@@ -1,7 +1,7 @@
-### STM32Gx31 BMS Board 
+## STM32Gx31 BMS Board 
 -----------------------------------------------------
 
-#### Problem
+### Problem
 -------
 A DIY Powerwall is the DIY construction of a pack of battery cells to create an energy store which can be used via inverters to power electrical items in the home. Generally cells are salvaged/second hand, and typically use Lithium 18650 cells.
 
@@ -11,7 +11,7 @@ Existing balancing solutions are available in the market place, but at a relativ
 
 A large number of people have utilised the commercial BATRIUM BMS system in their powerwall devices.
 
-#### Circuit explanation
+### Circuit explanation
 ------------------
 Battery management system controlled by STM32G031K6 32 bit microcontroller, the system has three separated units, power supply, analog digital conversion peripheral 
 and communication unit. 
@@ -45,10 +45,20 @@ Half and full duplex communication main elements are Texas Instruments SN65HVD10
 circuits. ICs datasheets recommend 10 kOhms pull up resistors for receiver input line and 10 kOhms pull down resistor for transmitter line. All outputs must be protected 
 from electrostatic discharge. ESD protection is made using 10 Ohms resistors and zener diodes with Vz = 5 V disallowing signals to have values greater than 5 V.
 
-#### Project Documents 
+### Project Documents 
 
 [STM32G0 NUCLEO User Manual 1](https://www.st.com/resource/en/user_manual/dm00622380-stm32g0-nucleo-32-board-mb1455-stmicroelectronics.pdf)
 
 [STM32G0 NUCLEO User Manual 2](https://www.st.com/resource/en/user_manual/dm00231744-stm32-nucleo32-boards-mb1180-stmicroelectronics.pdf)
 
 [STM32G0 NUCLEO Reference Manual](https://www.st.com/resource/en/reference_manual/dm00371828-stm32g0x1-advanced-armbased-32bit-mcus-stmicroelectronics.pdf)
+
+### KiCad Design 
+
+_BMSv2.0 PCB Layout Design_
+
+![GitHub Logo](/BMSv2.0-Layout/BMSv2.0-PCBLayout-view.png)
+
+_BMSv2.0 PCB 3D View_
+
+![GitHub Logo](/BMSv2.0-Layout/BMSv2.0-3D-view.png)
