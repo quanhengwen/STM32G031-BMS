@@ -1,4 +1,4 @@
-# stm32 microcontroller based battery management system
+### STM32Gx31 BMS Board 
 -----------------------------------------------------
 
 Problem
