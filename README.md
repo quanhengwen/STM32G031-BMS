@@ -44,3 +44,11 @@ in the same time whereas full duplex is making that possible.
 Half and full duplex communication main elements are Texas Instruments SN65HVD10 and SN65HVD73 transreceivers 
 circuits. ICs datasheets recommend 10 kOhms pull up resistors for receiver input line and 10 kOhms pull down resistor for transmitter line. All outputs must be protected 
 from electrostatic discharge. ESD protection is made using 10 Ohms resistors and zener diodes with Vz = 5 V disallowing signals to have values greater than 5 V.
+
+### Project Documents 
+
+[STM32G0 NUCLEO User Manual 1](https://www.st.com/resource/en/user_manual/dm00622380-stm32g0-nucleo-32-board-mb1455-stmicroelectronics.pdf)
+
+[STM32G0 NUCLEO User Manual 2](https://www.st.com/resource/en/user_manual/dm00231744-stm32-nucleo32-boards-mb1180-stmicroelectronics.pdf)
+
+[STM32G0 NUCLEO Reference Manual](https://www.st.com/resource/en/reference_manual/dm00371828-stm32g0x1-advanced-armbased-32bit-mcus-stmicroelectronics.pdf)
