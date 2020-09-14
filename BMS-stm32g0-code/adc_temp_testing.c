@@ -137,6 +137,8 @@ int main(void)
   MX_USART2_UART_Init();
   MX_ADC1_Init();
   /* USER CODE BEGIN 2 */
+	
+  //system varaibles
   const float invBeta = 1.00 / 3950.00;
   const float adcMax = 4095.00;
   const float invT0 = 1.00 / 298.15;
@@ -150,10 +152,10 @@ int main(void)
   while(1){
     //USER CODE BEGIN 1
       HAL_ADC_Start(&hadc1);
-	  HAL_ADC_PollForConversion(&hadc1, 100);
-	  adcVal = (HAL_ADC_GetValue(&hadc1));
-	  T = 1.00 / (invT0 + invBeta*(log ( adcMax / (float) adcVal - 1.00)));
-	  Tc = T - 273.15;
+      HAL_ADC_PollForConversion(&hadc1, 100);
+      adcVal = (HAL_ADC_GetValue(&hadc1));
+      T = 1.00 / (invT0 + invBeta*(log ( adcMax / (float) adcVal - 1.00)));
+      Tc = T - 273.15;
 	  /*
   		HAL_ADC_Start(&hadc1);
   		HAL_ADC_PollForConversion(&hadc1, 100);
@@ -164,7 +166,7 @@ int main(void)
   		T = (1.0 / ((double)c1 + (double)c2*logR2 + (double)c3*logR2*logR2*logR2));
   		Tc = T - 273;
   		HAL_ADC_Stop(&hadc1);*/
-  	}
+  }
    //USER CODE END 3
 	  /*HAL_ADC_Start(&hadc1);
 	  HAL_ADC_PollForConversion(&hadc1, 100);
