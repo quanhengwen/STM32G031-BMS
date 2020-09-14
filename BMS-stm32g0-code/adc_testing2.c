@@ -21,7 +21,7 @@
 #define ADC_1V_VALUE 1241
 #define ADC_2V_VALUE 2482
 #define ADC_3V_VALUE 3723
-#define OVERSAMPLE_VALUE 3
+#define OVERSAMPLE_VALUE 16
 /* USER CODE END PD */
 
 /* Private macro -------------------------------------------------------------*/
