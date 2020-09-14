@@ -83,6 +83,7 @@ int main(void)
 	  //HAL_GPIO_TogglePin(GPIOA, GPIO_PIN_12);
 	  //HAL_Delay(500);
 	  //ledBlink(panic);
+	  //ledBlink(unconfigured);
 	  ledBlink(configured);
     /* USER CODE BEGIN 3 */
   }
