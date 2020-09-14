@@ -64,7 +64,7 @@ _BMSv2.0 PCB 3D View_
 ### Shortcomings
 
 1. Replace boost converter with buck/boost converter
-2. Make a hole in the footprint for communication connector
+2. Make a hole in the footprint for communication connector header
 3. Replace 200k resistor with 180k resistor in the power supply block
 4. Move cooper pour layer from the output connectors
 5. Put the interface to connect the board with PC
