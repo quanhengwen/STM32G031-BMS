@@ -68,3 +68,4 @@ _BMSv2.0 PCB 3D View_
 3. Replace 200k resistor with 180k resistor in the power supply block to generate correct voltage reference
 4. Move the cooper pour layer from the output connectors
 5. Put the interface to connect the board with PC
+6. Change PWM output pin to TIM2_CH1
