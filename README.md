@@ -69,3 +69,4 @@ _BMSv2.0 PCB 3D View_
 4. Move the cooper pour layer from the output connectors
 5. Put the interface to connect the board with PC
 6. Change PWM output pin to TIM2_CH1
+7. Move ADC pin from ADC1_IN1 pin (PA1) to clear the conflict with UART2 configuration
