@@ -70,4 +70,4 @@ _BMSv2.0 PCB 3D View_
 5. Put the interface to connect the board with PC
 6. Change PWM output pin to TIM2_CH1
 7. Move ADC pin from ADC1_IN1 pin (PA1) to clear the conflict with UART2 configuration
-8. Using FreeRTOS, one task will take analog voltage and temperature values, another task will send the data after it gets the request
+8. Using FreeRTOS, one task will take analog voltage and temperature values every milisecond, another task will send the data after it gets the request
