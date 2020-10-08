@@ -61,7 +61,7 @@ _BMSv2.0 PCB 3D View_
 
 ![GitHub Logo](/BMSv2.0-Layout/BMSv2.0-3D-view.png)
 
-### Shortcomings
+### Shortcomings and footnotes
 
 1. Replace the boost converter with the buck/boost converter
 2. Make the hole in the footprint for communication connector header
@@ -70,3 +70,4 @@ _BMSv2.0 PCB 3D View_
 5. Put the interface to connect the board with PC
 6. Change PWM output pin to TIM2_CH1
 7. Move ADC pin from ADC1_IN1 pin (PA1) to clear the conflict with UART2 configuration
+8. Using FreeRTOS, one task will take analog voltage and temperature values, another task will send the data after it gets the request
