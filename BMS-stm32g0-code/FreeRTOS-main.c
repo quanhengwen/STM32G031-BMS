@@ -436,7 +436,8 @@ void UART_Task(void const * argument)
 	  HAL_UART_Transmit(&huart2, &temperature, sizeof(temperature), HAL_MAX_DELAY);
 	  //Disable transmission
 	  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_10, GPIO_PIN_RESET);
-      osDelay(10000);
+	  //10000 ms delay
+      	osDelay(10000);
   }
   /* USER CODE END 5 */
 }
@@ -466,7 +467,7 @@ void ADC_Volt_Task(void const * argument)
 	  HAL_ADC_PollForConversion(&hadc1, 100);
 	  //calculate analog and decimal values
 	  voltage = (HAL_ADC_GetValue(&hadc1));
-	  //1ms delay
+	  //5000 ms delay
 	  osDelay(5000);
   }
   /* USER CODE END ADC_Volt_Task */
@@ -497,7 +498,7 @@ void ADC_Temp_Task(void const * argument)
 	  HAL_ADC_PollForConversion(&hadc1, 100);
 	  //calculate analog and decimal values
 	  temperature = (HAL_ADC_GetValue(&hadc1));
-	  //1ms delay
+	  //5000 ms delay
 	  osDelay(5000);
   }
   /* USER CODE END ADC_Temp_Task */
